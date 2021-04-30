@@ -27,13 +27,7 @@ public class Material {
     this(tipoTrama, tipoMaterial, colorPrincipal, Color.blanco());
   }
 
-  public Material(TipoMaterial tipoMaterial, Color colorPrincipal) {
-    this(TipoTrama.LISA, tipoMaterial, colorPrincipal, Color.blanco());
-  }
 
-  public void setColorSecundario(Color colorSecundario) {
-    this.colorSecundario = colorSecundario;
-  }
 
   public TipoTrama getTrama() {
     return tipoTrama;

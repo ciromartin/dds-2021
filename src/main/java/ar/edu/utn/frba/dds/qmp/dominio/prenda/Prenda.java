@@ -16,7 +16,6 @@ public class Prenda {
   public Prenda(TipoPrenda tipo, Material material){
     requireNonNull(tipo);
     requireNonNull(material);
-    tipo.esMaterialValido(material);
     this.tipo = tipo;
     this.material = material;
   }

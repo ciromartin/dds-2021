@@ -1,6 +1,6 @@
 package ar.edu.utn.frba.dds.qmp.dominio.prenda;
-import ar.edu.utn.frba.dds.qmp.dominio.fabrica.FabricaMaterialValido;
-import ar.edu.utn.frba.dds.qmp.dominio.fabrica.FabricaMaterialValidoBasico;
+import ar.edu.utn.frba.dds.qmp.dominio.fabrica.validacion.FabricaMaterialValido;
+import ar.edu.utn.frba.dds.qmp.dominio.fabrica.validacion.FabricaMaterialValidoBasico;
 import ar.edu.utn.frba.dds.qmp.dominio.tipoprenda.*;
 import ar.edu.utn.frba.dds.qmp.dominio.tipoprenda.categoria.Categoria;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,10 +16,10 @@ public class TipoPrendaTest {
   private static List<Arguments> tipoPrendaYCategoria() {
     FabricaMaterialValido fabrica = new FabricaMaterialValidoBasico();
     return Arrays.asList(
-        Arguments.of(new Camisa(fabrica), Categoria.SUPERIOR),
-        Arguments.of(new Pantalon(fabrica), Categoria.INFERIOR),
-        Arguments.of(new Zapato(fabrica), Categoria.CALZADO),
-        Arguments.of(new Anteojos(fabrica), Categoria.ACCESORIO)
+        Arguments.of(TipoPrenda.CAMISA, Categoria.SUPERIOR),
+        Arguments.of(TipoPrenda.PANTALON, Categoria.INFERIOR),
+        Arguments.of(TipoPrenda.ZAPATO, Categoria.CALZADO),
+        Arguments.of(TipoPrenda.ANTEOJOS, Categoria.ACCESORIO)
     );
   }
 

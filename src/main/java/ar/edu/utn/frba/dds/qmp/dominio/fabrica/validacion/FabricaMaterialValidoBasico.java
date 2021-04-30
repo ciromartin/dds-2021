@@ -1,5 +1,6 @@
-package ar.edu.utn.frba.dds.qmp.dominio.fabrica;
+package ar.edu.utn.frba.dds.qmp.dominio.fabrica.validacion;
 
+import ar.edu.utn.frba.dds.qmp.dominio.fabrica.validacion.FabricaMaterialValido;
 import ar.edu.utn.frba.dds.qmp.dominio.material.tipo.TipoMaterial;
 import ar.edu.utn.frba.dds.qmp.dominio.tipoprenda.categoria.Categoria;
 import ar.edu.utn.frba.dds.qmp.dominio.material.tipo.TipoTrama;
