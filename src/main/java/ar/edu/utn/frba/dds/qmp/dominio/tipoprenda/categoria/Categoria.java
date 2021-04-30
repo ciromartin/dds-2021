@@ -1,4 +1,4 @@
-package ar.edu.utn.frba.dds.qmp.dominio;
+package ar.edu.utn.frba.dds.qmp.dominio.tipoprenda.categoria;
 
 public enum Categoria {
   SUPERIOR("SUPERIOR"),
